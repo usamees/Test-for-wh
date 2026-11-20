@@ -1,7 +1,10 @@
 node_modules/
-   .env
-   npm-debug.log*
+.env
+npm-debug.log*
 
-   # Personal Claude Code settings stay on your machine; the shared
-   # .claude/settings.json is committed, but this local override is not.
-   .claude/settings.local.json
+# Andmebaas ja üleslaaditud failid (kohalik / serveri andmekaust)
+data/
+
+# Personal Claude Code settings stay on your machine; the shared
+# .claude/settings.json is committed, but this local override is not.
+.claude/settings.local.json

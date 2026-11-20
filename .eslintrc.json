@@ -11,5 +11,12 @@
   "extends": "eslint:recommended",
   "rules": {
     "no-unused-vars": ["warn", { "argsIgnorePattern": "^(_|req|res|next)$" }]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["public/js/**/*.js", "site/data.js"],
+      "env": { "browser": true, "node": false },
+      "globals": { "module": "readonly" }
+    }
+  ]
 }
